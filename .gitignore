@@ -1,0 +1,13 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.venv/
+DATA/
+outputs/
+checkpoints/
+*.safetensors
+*.ckpt
+*.pth
+*.pt
+*.bin
+*.tar.gz

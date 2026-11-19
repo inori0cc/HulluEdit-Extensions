@@ -1,0 +1,18 @@
+# Install the CUDA builds of torch and torchvision with scripts/setup.sh.
+accelerate==0.21.0
+clarabel==0.11.1
+einops==0.8.2
+huggingface-hub==0.36.2
+nltk==3.9.1
+numpy==1.26.4
+pillow==12.3.0
+protobuf==7.36.2
+pycocoevalcap==1.2
+pycocotools==2.0.11
+PyYAML==6.0.3
+scipy==1.15.3
+sentencepiece==0.2.0
+timm==0.9.16
+tokenizers==0.13.3
+tqdm==4.70.1
+transformers==4.31.0
