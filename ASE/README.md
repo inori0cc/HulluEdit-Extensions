@@ -1,13 +1,13 @@
-# ST · Audio Hallucination Mitigation
+# Audio Subspace Editing (ASE)
 
-This extension adapts HulluEdit to audio question answering on Qwen2-Audio and Qwen2.5-Omni. It uses audio-token states to estimate the evidence subspace and earlier text states to estimate the prior subspace. The edit runs before the decoder's final normalization. Qwen2.5-Omni also supports PDE at the output head.
+ASE adapts HulluEdit to audio question answering on Qwen2-Audio and Qwen2.5-Omni. It uses audio-token states to estimate the evidence subspace and earlier text states to estimate the prior subspace. The edit runs before the decoder's final normalization. Qwen2.5-Omni also supports PDE at the output head.
 
 ## Setup
 
 Use Linux, Python 3.11 or newer, and an NVIDIA CUDA GPU with enough memory for the 7B checkpoint. From the repository root, create a separate environment.
 
 ```bash
-cd ST
+cd ASE
 python3.11 -m venv .venv
 source .venv/bin/activate
 ```
@@ -49,7 +49,7 @@ Audio is resampled to mono at 16 kHz and clipped to 30 seconds. The default deco
 
 ## Optional judging
 
-The judge accepts the generated predictions, task metadata, and a running OpenAI-compatible vLLM endpoint. Serve a model that supports structured output and tool calling. The archive used [unsloth/Qwen3.8-27B-NVFP4](https://huggingface.co/unsloth/Qwen3.8-27B-NVFP4/tree/f0b7c9e722f5565102fff8481c99e4d86ae099c7).
+The judge accepts the generated predictions, task metadata, and a running OpenAI-compatible vLLM endpoint. Serve a model that supports structured output and tool calling. The reference judge was [unsloth/Qwen3.8-27B-NVFP4](https://huggingface.co/unsloth/Qwen3.8-27B-NVFP4/tree/f0b7c9e722f5565102fff8481c99e4d86ae099c7).
 
 ```bash
 python -m pip install -r judge/requirements.txt
