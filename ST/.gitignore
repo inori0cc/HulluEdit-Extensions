@@ -1,0 +1,9 @@
+.cache/
+*.npy
+*.wav
+*.flac
+*.mp3
+*.jsonl
+inputs/
+prepared/
+results/

@@ -6,7 +6,7 @@ Course project for the Fall 2026 seminar [Trustworthy AI Models and Systems](htt
 | --- | --- |
 | [PDE](PDE/) · Preference-Constrained Direction Editing | LLaVA-1.5-7B inference and CHAIR evaluation |
 | [VMC](VMC/) · Visual Memory Calibration | LLaVA-1.5-7B adapter training, inference, and evaluation |
-| [Extension 3](extension-3/) | Code pending |
+| [ST](ST/) · Audio Hallucination Mitigation | Audio HulluEdit and PDE on Qwen audio-language models |
 
 PDE refines HulluEdit's update within the prior subspace at each beam-search step. It constrains the size of the update and how much of HulluEdit's preference signal to retain. See the [PDE setup and run instructions](PDE/README.md) to generate captions and evaluate them on COCO 2014.
 
